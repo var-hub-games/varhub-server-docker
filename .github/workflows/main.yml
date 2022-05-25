@@ -7,7 +7,7 @@ on:
        type: boolean
        required: false
   repository_dispatch:
-    types: [taw-connector-update, taw-web-client-update, taw-service-update]
+    types: [varhub-core, varhub-commutator]
 
 jobs:
   buildDockerTawServer:
