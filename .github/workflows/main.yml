@@ -46,10 +46,6 @@ jobs:
       - name: "[CORE] Install deps"
         run: yarn install
         working-directory: ./varhub-core
-        
-      - name: "[CORE] Build"
-        run: yarn run build
-        working-directory: ./connector
 
       - name: "[Docker] Log in to the Container registry"
         uses: docker/login-action@master
