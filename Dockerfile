@@ -3,11 +3,10 @@ FROM node:16.15.0
 
 ENV VarHubPort=5182
 
-COPY ["./dist", "/app/web/"]
-COPY ["./node_modules", "/app/taw/node_modules"]
+COPY ["./varhub-core/dist", "/app/"]
 
-WORKDIR /app/taw
+WORKDIR /app/
 
-EXPOSE ${TAW_PORT}
+EXPOSE ${VarHubPort}
 
 CMD [ "node", "./index.js" ]
